@@ -79,5 +79,5 @@ autopep8 --in-place --aggressive --aggressive src/main.py
 
 ---
 
-Made with ❤️ by **F_Eighty7** 🚀
+Made with ❤️ by **F-Eighty7** 🚀
 
