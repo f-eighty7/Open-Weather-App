@@ -77,9 +77,6 @@ autopep8 --in-place --aggressive --aggressive src/main.py
 - Support for **hourly & weekly weather forecasts**.
 - Integration with **multiple weather APIs**.
 
-## 📜 License
-This project is **MIT licensed**. Feel free to use and modify!
-
 ---
 
 Made with ❤️ by **F_Eighty7** 🚀
