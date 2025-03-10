@@ -48,11 +48,11 @@ python src/main.py
 ## ✅ Testing
 Run **pytest** to test the application:
 ```sh
-pytest -s --cov=src.main --cov-report=html
+pytest test/test.py -s --cov=src.main --cov-report=html
 ```
-Check the **HTML coverage report**:
+Check the **HTML coverage report**(For Windows):
 ```sh
-open htmlcov/index.html
+start htmlcov/index.html
 ```
 
 ## 🔍 Linting & Code Quality
