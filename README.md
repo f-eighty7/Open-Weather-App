@@ -48,7 +48,7 @@ python src/main.py
 ## ✅ Testing
 Run **pytest** to test the application:
 ```sh
-pytest test/test.py -s --cov=src.main --cov-report=html
+pytest test/test.py --html=report.html --self-contained-html --cov=src.main --cov-report=html
 ```
 Check the **HTML coverage report**(For Windows):
 ```sh

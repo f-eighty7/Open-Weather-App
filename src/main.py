@@ -9,6 +9,7 @@ import requests
 load_dotenv()
 API = os.getenv("WEATHER_API_KEY")
 
+
 def fetch_weather_data(country):
     """
     Fetch weather data from OpenWeatherMap API.
@@ -26,11 +27,15 @@ def fetch_weather_data(country):
 
     if response.ok:
         return response.json()
-    if response.status_code == 401:
-        return {"error": "Invalid API key"}
-    if response.status_code == 404:
-        return {"error": "Country/City not found"}
-    return {"error": "An unexpected error occurred"}
+
+    error_messages = {
+        401: {"error": "Invalid API key"},
+        404: {"error": "Country/City not found"}
+    }
+
+    return error_messages.get(
+        response.status_code, {
+            "error": "An unexpected error occurred"})
 
 
 def get_temperature_unit():
@@ -138,6 +143,7 @@ def main():
                 temp_unit_choice))
 
         break
+
 
 if __name__ == "__main__":
     main()
