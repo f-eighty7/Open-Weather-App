@@ -1,3 +1,5 @@
 .env
 report.html
 .coverage
+assets
+__pycache__
